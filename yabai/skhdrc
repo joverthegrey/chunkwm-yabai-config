@@ -13,6 +13,9 @@ alt - h : yabai -m window --focus west
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - l : yabai -m window --focus east
+alt - o : yabai -m window --focus prev
+alt - p : yabai -m window --focus next
+alt - i : yabai -m window --focus last
 
 # Moving windows
 shift + alt - h : yabai -m window --warp west
@@ -74,6 +77,12 @@ shift + lctrl + alt - l : yabai -m window --insert east
 
 # Float / Unfloat window
 shift + alt - space : yabai -m window --toggle float
+
+# Close window
+shift + alt - q : yabai -m window --close
+
+# toggle monocle mode
+shift + alt - w : "${HOME}"/.config/yabai/scripts/toggle_monocle_mode
 
 # Restart Yabai
 shift + lctrl + alt - r : 
